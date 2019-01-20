@@ -3,7 +3,7 @@ var app = express();
 var router = express.Router();
 
 app.use(function(req, res, next) {
-  res.setHeader('x-env', 'eb')
+  res.setHeader('x-env', 'lambda')
   next();
 });
 
