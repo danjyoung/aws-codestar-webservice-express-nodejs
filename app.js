@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var router = express.Router();
 
 app.get('/', function(req, res) {
   res.send({
@@ -13,6 +14,7 @@ app.post('/', function(req, res) {
   });
 });
 
+app.use('/api', router);
 
 // Export your Express configuration so that it can be consumed by the Lambda handler
 module.exports = app
