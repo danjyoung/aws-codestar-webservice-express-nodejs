@@ -8,13 +8,13 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/', function(req, res) {
+app.get('/api', function(req, res) {
   res.send({
     "Output": "Hello World!"
   });
 });
 
-app.post('/', function(req, res) {
+app.post('/api', function(req, res) {
   res.send({
     "Output": "Hello World!"
   });
