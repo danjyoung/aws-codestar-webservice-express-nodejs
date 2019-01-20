@@ -2,6 +2,11 @@ var express = require('express');
 var app = express();
 var router = express.Router();
 
+app.use(function(req, res, next) {
+  res.setHeader('x-env', 'eb')
+  next();
+});
+
 app.get('/', function(req, res) {
   res.send({
     "Output": "Hello World!"
