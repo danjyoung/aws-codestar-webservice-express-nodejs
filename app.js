@@ -10,13 +10,13 @@ app.use(function(req, res, next) {
 
 app.get('/api', function(req, res) {
   res.send({
-    "Output": "Hello World!"
+    "Output": "Hello World!!"
   });
 });
 
 app.post('/api', function(req, res) {
   res.send({
-    "Output": "Hello World!"
+    "Output": "Hello World!!"
   });
 });
 
